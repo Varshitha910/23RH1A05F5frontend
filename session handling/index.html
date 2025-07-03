@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <input type="text" id="username" placeholder="Enter name">
+        <button onclick="nextpage()">Login</button>
+        <script>
+            function nextpage(){
+                let username=document.getElementById("username").value;
+                sessionStorage.setItem("uname",username);
+                window.location.href="dashboard.html";
+            }
+
+        </script>
+    </body>
+</html>
